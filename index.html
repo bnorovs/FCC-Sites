@@ -1,0 +1,193 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<title> Tribute Site </title>
+<meta charset="utf-8">
+
+<!-- Link or Inline Stylesheets Below -->
+<style>
+	@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+	body {
+		background-image: linear-gradient(#ffadad, #ffffff ,#99eeff);
+		font-family: "Poppins", sans-serif;
+	}
+	nav {
+		height: 50px;
+		width: 100%;
+		margin:0px 0px 0px 0px;
+		grid-area: navi;
+	}
+
+	nav ul {
+		display: grid;
+		grid-template-columns: 50%  50%;
+		list-style-type: none;
+	}
+	nav li {
+		text-align: left;
+
+	}
+	#title {
+		grid-area: tit;
+		font-size: 10vw;
+		font-weight: bold;
+		text-align: center;
+		margin: 0px 0px 0px 0px;
+		padding: 30px 0px;
+	}
+	#img-div {
+		display: block;
+		grid-area: trib;
+		grid-column: 1 / 2;
+		max-width: 1000px;
+		text-align :center;
+	}
+	#image {
+		display: block;
+		max-width: 100%;
+		box-shadow: -20px 20px 20px 0px rgba(100, 111, 123, .1);
+		margin: 0 auto;
+	}
+	#tribute-info {
+		grid-area: trib;
+		grid-column: 2 / 4;
+	}
+	#discography {
+		display: grid;
+		grid-template-rows: 0.1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 20px 10%;
+	}
+
+	#discography h2 {
+		grid-column: 1 / 4;
+	}
+
+	#discography img {
+		max-width: 100%;
+		height: auto;
+		display: block;
+	}
+	#ret {
+		grid-area: ret;
+	}
+	#first {
+		display: grid;
+		grid-template-rows: 0.25fr 0.25fr 1fr;
+		grid-template-columns: 2fr 1fr 1fr;
+		grid-template-areas:
+			"tit . . "
+			"navi . . "
+			"trib trib trib";
+	}
+
+	#main {
+		margin-left: auto;
+		margin-right: auto;
+		width: 70%;
+		padding: 15px;
+	}
+</style>
+</head>
+
+<body>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	<main id="main">
+	<div id="first">
+	<header>
+	<h1 id="title">Nujabes</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="">Home</a></li>
+			<li><a href="#discography">Discography</a></li>
+		</ul>
+	</nav>
+	<figure id="img-div">
+		<img id="image" src="nujabes.jpg" alt="Nujabes, the man himself.">
+		<figcaption id="img-caption">
+		"
+		Nujabes, the man
+		himself.
+		"
+		</figcaption>
+	</figure>
+	<section id="tribute-info">
+		<h2>Quick Rundown</h2>
+		<p> Read more about the legend <a id="tribute-link" href="https://en.wikipedia.org/wiki/Nujabes" target="_blank">here</a>.</p>
+	</section>
+	</div>
+	<section id="discography">
+		<h2>Discography</h2>
+		<div>
+			<img class="disc1" src="metaphorical_music.jpg" alt="The cover of Nujabes' 1st studio album, Metaphorical Music.">
+			<h3>Metaphorical Music (2003)</h3>
+			<h4>Tracklist</h4>
+			<ol>
+				<li>"Blessing It (Remix)" (featuring Substantial & Pase Rock)</li>
+				<li>"Horn in the Middle"</li>
+				<li>"Lady Brown" (featuring Cise Starr)</li>
+				<li>"Kumomi"</li>
+				<li>"Highs 2 Lows" (featuring Cise Starr)</li>
+				<li>"Beat Laments the World"</li>
+				<li>"Letter from Yokosuka"</li>
+				<li>"Think Different" (featuring Substantial)</li>
+				<li>"A Day by Atmosphere Supreme"</li>
+				<li>"Next View" (featuring Uyama Hiroto)</li>
+				<li>"Latitude (Remix)" (featuring Five Deez)</li>
+				<li>"F.I.L.O." (featuring Shing02)</li>
+				<li>"Summer Gypsy"</li>
+				<li>"The Final View"</li>
+				<li>"Peaceland"</li>
+			</ol>
+		</div>
+		<div>
+			<img class="disc2" src="modal_soul.jpg" alt="The cover of Nujabes' 2nd studio album, Modal Soul.">
+			<h3>Modal Soul (2005)</h3>
+			<h4>Tracklist</h4>
+			<ol>
+				<li>"Feather" (featuring Cise Starr & Akin)</li>
+				<li>"Ordinary Joe" (featuring Terry Caller)</li>
+				<li>"Reflection Eternal"</li>
+				<li>"Luv (Sic.) Part 3" (featuring Shing02)</li>
+				<li>"Music Is Mine"</li>
+				<li>"Eclipse" (featuring Substantial)</li>
+				<li>"The Sign" (featuring Pase Rock)</li>
+				<li>"Thank You" (featuring Apani B)</li>
+				<li>"World's End Rhapsody"</li>
+				<li>"Modal Soul" (featuring Uyama Hiroto)</li>
+				<li>"Flowers"</li>
+				<li>"Sea of Cloud"</li>
+				<li>"Light on the Land"</li>
+				<li>"Horizon"</li>
+			</ol>
+		</div>
+		<div>
+			<img class="disc3" src="spiritual_state.jpg" alt="The cover of Nujabes' 3rd studio album, Spiritual State.">
+			<h3>Spiritual State (2011)</h3>
+			<h4>Tracklist</h4>
+			<ol>
+				<li>"Spiritual State" (featuring Uyama Hiroto)</li>
+				<li>"Sky Is Tumbling" (featuring Cise Starr)</li>
+				<li>"Gone Are the Days" (featuring Uyama Hiroto)</li>
+				<li>"Spiral"</li>
+				<li>"City Lights" (featuring Pase Rock and Substantial)</li>
+				<li>"Color of Autumn"</li>
+				<li>"Dawn On the Side"</li>
+				<li>"Yes" (featuring Pase Rock)</li>
+				<li>"Rainyway Back Home"</li>
+				<li>"Far Fowls"</li>
+				<li>"Fellows"</li>
+				<li>"Waiting For the Clouds" (featuring Substantial)</li>
+				<li>"Prayer"</li>
+				<li>"Island" (featuring Uyama Hiroto and Haruka Nakamura)</li>
+		</ol>
+		</div>
+	</section>
+	<div id="ret">
+		<a href="#main">Return to top</a>
+	</div>
+	</main>
+</body>
+</html>
